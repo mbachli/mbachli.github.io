@@ -1,5 +1,4 @@
-# Welcome 👋
-
+# Welcome
 I’m Mirjam Bächli, an economist and researcher interested in labor markets, immigration and education.
 
 ## Published papers
