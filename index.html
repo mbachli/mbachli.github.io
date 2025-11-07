@@ -10,106 +10,95 @@
       line-height: 1.6;
       margin: 0;
       scroll-behavior: smooth;
-      color: #4A4A4A; /* Slate Gray text */
-      background-color: #FFFFFF;
+      color: #2f2f2f; /* slate gray base text */
+      background: #fff;
     }
 
     header {
-      background: #4A4A4A; /* Slate Gray */
-      color: #FFFFFF;
-      padding: 20px 20px; /* further reduced header height */
+      background: #f5f5f5; /* very light grey */
+      color: #2f2f2f;
+      padding: 40px 20px; /* smaller header */
       text-align: center;
     }
 
     header img {
-      width: 100px;  /* smaller photo */
-      height: 100px;
+      width: 130px;
+      height: 130px;
       border-radius: 50%;
       object-fit: cover;
-      margin-bottom: 10px;
+      margin-bottom: 10px; /* less space below photo */
+    }
+
+    header h1 {
+      margin-top: 0;
+      margin-bottom: 0;
+      font-size: 2.2em;
     }
 
     nav {
-      background: #FFFFFF;
+      background: #e0e0e0; /* subtle light gray for nav */
       position: sticky;
       top: 0;
-      padding: 10px;
+      padding: 8px 0;
       text-align: center;
-      border-bottom: 1px solid #FF6B6B; /* subtle Warm Coral accent */
+      border-bottom: 2px solid #ff6f61; /* coral underline */
     }
 
     nav a {
-      color: #4A4A4A; /* Slate Gray */
+      color: #2f2f2f;
       margin: 0 15px;
       text-decoration: none;
       font-weight: 600;
-      transition: all 0.3s;
-    }
-
-    nav a:hover {
-      color: #FF6B6B; /* Warm Coral on hover */
     }
 
     section {
-      padding: 50px 20px; /* slightly less padding for compactness */
+      padding: 20px 20px;
       max-width: 900px;
       margin: auto;
     }
 
+    section + section {
+      margin-top: 40px; /* spacing between sections */
+    }
+
     h2 {
-      color: #4A4A4A; /* Slate Gray */
-      border-bottom: none; /* remove coral underline to avoid "button look" */
+      color: #ff6f61; /* warm coral */
+      border-bottom: 2px solid #ff6f61;
       padding-bottom: 5px;
-      margin-bottom: 20px;
+      margin-top: 0;
     }
 
     h3 {
-      color: #4A4A4A;
-      margin-top: 25px;
-      margin-bottom: 10px;
-      font-weight: 600;
+      color: #2f2f2f;
+      margin-top: 20px;
+      margin-bottom: 5px;
     }
 
     a {
-      color: #FF6B6B; /* Warm Coral links */
+      color: #ff6f61; /* coral for links */
       text-decoration: none;
-      transition: all 0.2s;
     }
+
     a:hover {
       text-decoration: underline;
     }
 
     footer {
-      background: #4A4A4A; /* Slate Gray footer */
-      color: #FFFFFF;
+      background: #f5f5f5;
+      color: #2f2f2f;
       text-align: center;
       padding: 15px;
+      border-top: 1px solid #ccc;
     }
   </style>
 </head>
 
 <body>
 
-<header id="home">
-  <img src="OKP_9946-bw.jpg" alt="Profile photo of Mirjam Bächli">
-  <h1>Mirjam Bächli</h1>
-</header>
-
-<style>
-  header {
-    background: #6E6E6E; /* lighter slate gray */
-    color: #FFFFFF;
-    padding: 20px 20px;
-    text-align: center;
-  }
-
-  footer {
-    background: #6E6E6E; /* lighter slate gray */
-    color: #FFFFFF;
-    text-align: center;
-    padding: 15px;
-  }
-</style>
+  <header id="home">
+    <img src="OKP_9946-bw.jpg" alt="Profile photo of Mirjam Bächli">
+    <h1>Mirjam Bächli</h1>
+  </header>
 
   <nav>
     <a href="#about">About</a>
@@ -120,16 +109,10 @@
   <section id="about">
     <h2>About Me</h2>
     <p>
-      I am an applied economist working on topics in labor economics,
-      immigration and education. My recent work combines microeconometric
-      analysis and field experiments to better understand how to support jobseekers. I am also a 
-      co-founder of <a href="https://path2work.ethz.ch/">Path2Work</a>.
+      I am an applied economist working on labor economics, immigration, and education. My recent work combines microeconometric analysis and field experiments to support jobseekers. I am also a co-founder of <a href="https://path2work.ethz.ch/">Path2Work</a>.
     </p>
-
     <p>
-      I am a Postdoctoral Researcher in the Labor Group led by Rafael Lalive at the University of Lausanne. I completed my 
-      PhD in Economics at the University of St.Gallen under the supervision of Reto Föllmi (2022). I visited the NHH in Bergen in 2024, 
-      hosted by Aline Bütikofer and the Universitat Pompeu Fabra in 2021 and 2022, hosted by Albrecht Glitz. See my CV for more information.
+      I am a Postdoctoral Researcher in the Labor Group led by Rafael Lalive at the University of Lausanne. I completed my PhD in Economics at the University of St.Gallen under the supervision of Reto Föllmi (2022). I visited NHH Bergen in 2024, hosted by Aline Bütikofer, and Universitat Pompeu Fabra in 2021-2022, hosted by Albrecht Glitz. See my CV for more details.
     </p>
   </section>
 
@@ -138,29 +121,25 @@
 
     <h3>Publications</h3>
     <p>
-      <a href="https://jhr.uwpress.org/content/early/2023/03/02/jhr.0721-11805R2">Free Movement of Workers and Native Demand for Tertiary Education</a>, with Teodora Tsankova, 
-      The Journal of Human Resources (2023)
+      <a href="https://jhr.uwpress.org/content/early/2023/03/02/jhr.0721-11805R2">Free Movement of Workers and Native Demand for Tertiary Education</a>, with Teodora Tsankova, The Journal of Human Resources (2023)
     </p>
-
     <p>
-      <a href="https://sjes.springeropen.com/articles/10.1186/s41937-024-00125-2">Ranking occupations by their proximity to workers’ profiles</a>, with Hélène Benghalem et al., Swiss Journal of Economics and Statistics (2024)
+      <a href="https://sjes.springeropen.com/articles/10.1186/s41937-024-00125-2">Ranking occupations by their proximity to workers’ profiles</a>, with Hélène Benghalem, Doriana Tinello, Damaris Aschwanden, Sascha Zuber, Matthias Kliegel, Michele Pellizzari, Rafael Lalive. Swiss Journal of Economics and Statistics (2024)
     </p>
 
-    <h3>Working papers</h3>
-    <p>Labor Protection and Support for Immigration, with Teodora Tsankova</p>
-    <p>Immigration, Inequality and Income Taxes, with Albrecht Glitz</p>
-    <p>Helping Jobseekers with Recommendations Based on Skill Profiles, with Rafael Lalive and Michele Pellizzari</p>
+    <h3>Working Papers</h3>
+    <p>Labor Protection and Support for Immigration, with Teodora Tsankova, R&R Industrial & Labor Relations Review</p>
+    <p>Immigration, Inequality and Income Taxes, with Albrecht Glitz, R&R American Economic Journal: Applied Economics</p>
+    <p>Helping Jobseekers with Recommendations Based on Skill Profiles or Past Experience, with Rafael Lalive and Michele Pellizzari</p>
 
     <h3>Work in Progress</h3>
-    <p>Supporting Job Search through Cognitive Training, with Hélène Benghalem, Rafael Lalive, Michele Pellizzari et al.</p> 
-    <p>Path2Work: Targeted support for refugees, with Achim Ahrens, Philip Grech, Dominik Hangartner, Rafael Lalive</p>
+    <p>Supporting Job Search through Cognitive Training, with Hélène Benghalem, Rafael Lalive, Michele Pellizzari et al.</p>
+    <p>Path2Work: Targeted support of job search for refugees using an online job platform, with Achim Ahrens, Philip Grech, Dominik Hangartner, Rafael Lalive</p>
   </section>
 
   <section id="contact">
     <h2>Contact</h2>
-    <p>
-      <a href="mailto:mirjam.baechli@unil.ch">mirjam.baechli@unil.ch</a>
-    </p>
+    <p><a href="mailto:mirjam.baechli@unil.ch">mirjam.baechli@unil.ch</a></p>
   </section>
 
   <footer>
