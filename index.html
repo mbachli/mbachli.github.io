@@ -17,8 +17,16 @@
     header {
       background: #4A4A4A; /* Slate Gray */
       color: #FFFFFF;
-      padding: 40px 20px; /* reduced from 80px */
+      padding: 20px 20px; /* further reduced header height */
       text-align: center;
+    }
+
+    header img {
+      width: 100px;  /* smaller photo */
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
     }
 
     nav {
@@ -27,7 +35,7 @@
       top: 0;
       padding: 10px;
       text-align: center;
-      border-bottom: 2px solid #FF6B6B; /* Warm Coral accent */
+      border-bottom: 1px solid #FF6B6B; /* subtle Warm Coral accent */
     }
 
     nav a {
@@ -37,25 +45,29 @@
       font-weight: 600;
       transition: all 0.3s;
     }
+
     nav a:hover {
       color: #FF6B6B; /* Warm Coral on hover */
     }
 
     section {
-      padding: 60px 20px;
+      padding: 50px 20px; /* slightly less padding for compactness */
       max-width: 900px;
       margin: auto;
     }
 
     h2 {
       color: #4A4A4A; /* Slate Gray */
-      border-bottom: 2px solid #FF6B6B; /* Warm Coral accent */
+      border-bottom: none; /* remove coral underline to avoid "button look" */
       padding-bottom: 5px;
+      margin-bottom: 20px;
     }
 
     h3 {
       color: #4A4A4A;
-      margin-top: 30px;
+      margin-top: 25px;
+      margin-bottom: 10px;
+      font-weight: 600;
     }
 
     a {
@@ -71,26 +83,33 @@
       background: #4A4A4A; /* Slate Gray footer */
       color: #FFFFFF;
       text-align: center;
-      padding: 20px;
-    }
-
-    /* Profile photo styling */
-    header img {
-      width: 120px; /* slightly smaller */
-      height: 120px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-bottom: 15px;
+      padding: 15px;
     }
   </style>
 </head>
 
 <body>
 
-  <header id="home">
-      <img src="OKP_9946-bw.jpg" alt="Profile photo of Mirjam Bächli">
-      <h1>Mirjam Bächli</h1>
-  </header>
+<header id="home">
+  <img src="OKP_9946-bw.jpg" alt="Profile photo of Mirjam Bächli">
+  <h1>Mirjam Bächli</h1>
+</header>
+
+<style>
+  header {
+    background: #6E6E6E; /* lighter slate gray */
+    color: #FFFFFF;
+    padding: 20px 20px;
+    text-align: center;
+  }
+
+  footer {
+    background: #6E6E6E; /* lighter slate gray */
+    color: #FFFFFF;
+    text-align: center;
+    padding: 15px;
+  }
+</style>
 
   <nav>
     <a href="#about">About</a>
