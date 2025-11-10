@@ -14,34 +14,41 @@
       background-color: #FFFFFF;
     }
 
-    header {
-      background: #6E6E6E; /* lighter slate gray */
-      color: #FFFFFF;
-      padding: 10px 20px; /* compact padding */
-      text-align: center;
-    }
 
+header {
+  background: #6E6E6E;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  text-align: center;
+}
 
+/* Circular photo frame */
 .photo-frame {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  background-color: #FFFFFF; /* white circle background — perfect for b&w photo */
-  overflow: hidden;          /* crop anything outside the circle */
-  margin: 0 auto 7px auto;   /* center the circle */
+  background-color: #D8D8D8; /* light gray – matches b&w photo tone */
+  overflow: hidden;          /* ensures circle shape */
+  margin: 0 auto 7px auto;   /* centers it */
 }
 
+/* Image styling */
 .photo-frame img {
   width: 100%;
   height: 100%;
-  object-fit: contain;  /* shows the whole photo */
-  background-color: #FFFFFF; /* fills empty space if needed */
+  object-fit: contain;       /* shows more of the photo */
+  display: block;            /* removes inline gaps */
 }
+
+/* Name below image */
+header h1 {
+  margin: 0;
+  font-size: 1.8em;
+  color: #FFFFFF;            /* ensures it's visible on gray background */
+}
+
     
-    header h1 {
-      margin: 0;
-      font-size: 1.8em;
-    }
+
 
     section {
       padding: 10px 20px; /* less padding for tighter sections */
@@ -100,12 +107,15 @@
 
 <body>
 
+
 <header id="home">
   <div class="photo-frame">
-  <img src="OKP_9946-bw.jpg" alt="Profile photo of Mirjam Bächli">
+    <img src="OKP_9946-bw.jpg" alt="Profile photo of Mirjam Bächli">
+  </div>
   <h1>Mirjam Bächli</h1>
 </header>
 
+  
 <section id="about">
   <h2>About Me</h2>
   <p>
